@@ -37,20 +37,40 @@ function getVolume(volume){
 //Part 2 - Accessing values
 //Using dot notation, add the property "color" and assign a string to it.
 //Can you accomplish the same task using bracket notation??
+myPackage.color = "Red"; 
+myPackage.color = "Blue"; 
 
 //Using dot notation, add the property "serialNumber" and assign a number to it.
 //Can you accomplish the same task using bracket notation?? 
-
+myPackage.serialNumber = 33; 
+myPackage['serialNumber'] = 22; 
 var items = ["Calculators", "Rulers", "Math Textbooks"];
 
 //Using whichever method, access "contents" of "myPackage" and update it with "items"
+myPackage['contents'] = items;
  
 //Using whichever method, access "numOfItems" of "myPackage" and manually update it with how many "items" there are
+myPackage['numOfItems'] = items.length; 
 
 //Add another item to the "contents" array called "Teddy Bear".
+var TeddyBear = [];
+myPackage['contents'] = TeddyBear; 
+// not sure if TeddyBear just replaced the items array or appended...so..
+// maybe  [[items], ["Teddy Bear"]]
+
 
 
 //Part 3 - Looping
 //Using a proper loop (for or for-in??) log all KEYS of the object "myPackage"
+for(key in myPackage){
+    console.log(key); 
+}
+
 
 //Using a proper loop (for or for-in??) log all items in the "contents"
+
+for(item in contents){
+    console.log(item);
+}
+
+
