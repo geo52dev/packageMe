@@ -39,6 +39,8 @@ function getVolume(volume){
 //Can you accomplish the same task using bracket notation??
 myPackage.color = "Red"; 
 myPackage.color = "Blue"; 
+myPackage['color'] = "Yellow";
+
 
 //Using dot notation, add the property "serialNumber" and assign a number to it.
 //Can you accomplish the same task using bracket notation?? 
@@ -53,8 +55,9 @@ myPackage['contents'] = items;
 myPackage['numOfItems'] = items.length; 
 
 //Add another item to the "contents" array called "Teddy Bear".
-var TeddyBear = [];
-myPackage['contents'] = TeddyBear; 
+var contents = [];
+contents['contents'] = 'TeddyBear';
+console.log(contents); 
 // not sure if TeddyBear just replaced the items array or appended...so..
 // maybe  [[items], ["Teddy Bear"]]
 
