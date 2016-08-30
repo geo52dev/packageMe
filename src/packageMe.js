@@ -1,3 +1,4 @@
+
 //Part 1 - Instantiation
 
 //Create an object literal called "myPackage" that has the following properties:
@@ -7,12 +8,31 @@
 //"numOfItems" which stores the number of items in the box
 //"contents" an empty array which will contain the items of the package. 
 
+
+var myPackage = {
+	height: 100, 
+	width: 200, 
+	length: 250, 
+	numOfItems: 0,
+	contents: []
+}
 //Extra Credit
 //a function "changeHeight" => changes the package's height
 //a function "changeWidth" => changes the package's length
 //a function "changeLength" => changes the package's length
 //a function "getVolume" => calculates and returns the package's volume
-
+function changeHeight(height){
+    myPackage.height = height; 
+};
+function changeWidth(width){
+    myPackage.width = width; 
+};
+function changeLength(length){
+    myPackage.length = length; 
+};
+function getVolume(volume){
+    myPackage.numOfItems = volume; 
+};
 
 //Part 2 - Accessing values
 //Using dot notation, add the property "color" and assign a string to it.
